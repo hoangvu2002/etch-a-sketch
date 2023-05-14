@@ -191,8 +191,142 @@ const divRow2Column16 = document.createElement("div");
 divRow2Column16.classList.add("rowElement");
 divRow2.appendChild(divRow2Column16);
 
+// create and add element divs for row 3
+
+const divRow3Column1 = document.createElement("div");
+divRow3Column1.classList.add("rowElement");
+divRow3.appendChild(divRow3Column1);
+
+const divRow3Column2 = document.createElement("div");
+divRow3Column2.classList.add("rowElement");
+divRow3.appendChild(divRow3Column2);
+
+const divRow3Column3 = document.createElement("div");
+divRow3Column3.classList.add("rowElement");
+divRow3.appendChild(divRow3Column3);
+
+const divRow3Column4 = document.createElement("div");
+divRow3Column4.classList.add("rowElement");
+divRow3.appendChild(divRow3Column4);
+
+const divRow3Column5 = document.createElement("div");
+divRow3Column5.classList.add("rowElement");
+divRow3.appendChild(divRow3Column5);
+
+const divRow3Column6 = document.createElement("div");
+divRow3Column6.classList.add("rowElement");
+divRow3.appendChild(divRow3Column6);
+
+const divRow3Column7 = document.createElement("div");
+divRow3Column7.classList.add("rowElement");
+divRow3.appendChild(divRow3Column7);
+
+const divRow3Column8 = document.createElement("div");
+divRow3Column8.classList.add("rowElement");
+divRow3.appendChild(divRow3Column8);
+
+const divRow3Column9 = document.createElement("div");
+divRow3Column9.classList.add("rowElement");
+divRow3.appendChild(divRow3Column9);
+
+const divRow3Column10 = document.createElement("div");
+divRow3Column10.classList.add("rowElement");
+divRow3.appendChild(divRow3Column10);
+
+const divRow3Column11 = document.createElement("div");
+divRow3Column11.classList.add("rowElement");
+divRow3.appendChild(divRow3Column11);
+
+const divRow3Column12 = document.createElement("div");
+divRow3Column12.classList.add("rowElement");
+divRow3.appendChild(divRow3Column12);
+
+const divRow3Column13 = document.createElement("div");
+divRow3Column13.classList.add("rowElement");
+divRow3.appendChild(divRow3Column13);
+
+const divRow3Column14 = document.createElement("div");
+divRow3Column14.classList.add("rowElement");
+divRow3.appendChild(divRow3Column14);
+
+const divRow3Column15 = document.createElement("div");
+divRow3Column15.classList.add("rowElement");
+divRow3.appendChild(divRow3Column15);
+
+const divRow3Column16 = document.createElement("div");
+divRow3Column16.classList.add("rowElement");
+divRow3.appendChild(divRow3Column16);
+
+// create and add element divs for row 4
+
+const divRow4Column1 = document.createElement("div");
+divRow4Column1.classList.add("rowElement");
+divRow4.appendChild(divRow4Column1);
+
+const divRow4Column2 = document.createElement("div");
+divRow4Column2.classList.add("rowElement");
+divRow4.appendChild(divRow4Column2);
+
+const divRow4Column3 = document.createElement("div");
+divRow4Column3.classList.add("rowElement");
+divRow4.appendChild(divRow4Column3);
+
+const divRow4Column4 = document.createElement("div");
+divRow4Column4.classList.add("rowElement");
+divRow4.appendChild(divRow4Column4);
+
+const divRow4Column5 = document.createElement("div");
+divRow4Column5.classList.add("rowElement");
+divRow4.appendChild(divRow4Column5);
+
+const divRow4Column6 = document.createElement("div");
+divRow4Column6.classList.add("rowElement");
+divRow4.appendChild(divRow4Column6);
+
+const divRow4Column7 = document.createElement("div");
+divRow4Column7.classList.add("rowElement");
+divRow4.appendChild(divRow4Column7);
+
+const divRow4Column8 = document.createElement("div");
+divRow4Column8.classList.add("rowElement");
+divRow4.appendChild(divRow4Column8);
+
+const divRow4Column9 = document.createElement("div");
+divRow4Column9.classList.add("rowElement");
+divRow4.appendChild(divRow4Column9);
+
+const divRow4Column10 = document.createElement("div");
+divRow4Column10.classList.add("rowElement");
+divRow4.appendChild(divRow4Column10);
+
+const divRow4Column11 = document.createElement("div");
+divRow4Column11.classList.add("rowElement");
+divRow4.appendChild(divRow4Column11);
+
+const divRow4Column12 = document.createElement("div");
+divRow4Column12.classList.add("rowElement");
+divRow4.appendChild(divRow4Column12);
+
+const divRow4Column13 = document.createElement("div");
+divRow4Column13.classList.add("rowElement");
+divRow4.appendChild(divRow4Column13);
+
+const divRow4Column14 = document.createElement("div");
+divRow4Column14.classList.add("rowElement");
+divRow4.appendChild(divRow4Column14);
+
+const divRow4Column15 = document.createElement("div");
+divRow4Column15.classList.add("rowElement");
+divRow4.appendChild(divRow4Column15);
+
+const divRow4Column16 = document.createElement("div");
+divRow4Column16.classList.add("rowElement");
+divRow4.appendChild(divRow4Column16);
+
 container.appendChild(divRow1);
 container.appendChild(divRow2);
+container.appendChild(divRow3);
+container.appendChild(divRow4);
 //const rows = document.querySelectorAll(".row");
 //rows.forEach(child => {
 //    container.appendChild(child)});
