@@ -33,7 +33,7 @@ const divRow7 = document.createElement("div");
 divRow7.classList.add("row");
 
 const divRow8 = document.createElement("div");
-divRow1.classList.add("row");
+divRow8.classList.add("row");
 
 const divRow9 = document.createElement("div");
 divRow9.classList.add("row");
@@ -59,10 +59,64 @@ divRow15.classList.add("row");
 const divRow16 = document.createElement("div");
 divRow16.classList.add("row");
 
-const rows = document.querySelectorAll(".row");
-rows.forEach(child => {
-    container.appendChild(child)});
+const divRow1Column1 = document.createElement("div");
+divRow1Column1.classList.add("elementRow1");
 
+const divRow1Column2 = document.createElement("div");
+divRow1Column2.classList.add("elementRow1");
+
+const divRow1Column3 = document.createElement("div");
+divRow1Column3.classList.add("elementRow1");
+
+const divRow1Column4 = document.createElement("div");
+divRow1Column4.classList.add("elementRow1");
+
+const divRow1Column5 = document.createElement("div");
+divRow1Column5.classList.add("elementRow1");
+
+const divRow1Column6 = document.createElement("div");
+divRow1Column6.classList.add("elementRow1");
+
+const divRow1Column7 = document.createElement("div");
+divRow1Column7.classList.add("elementRow1");
+
+const divRow1Column8 = document.createElement("div");
+divRow1Column8.classList.add("elementRow1");
+
+const divRow1Column9 = document.createElement("div");
+divRow1Column9.classList.add("elementRow1");
+
+const divRow1Column10 = document.createElement("div");
+divRow1Column10.classList.add("elementRow1");
+
+const divRow1Column11 = document.createElement("div");
+divRow1Column11.classList.add("elementRow1");
+
+const divRow1Column12 = document.createElement("div");
+divRow1Column12.classList.add("elementRow1");
+
+const divRow1Column13 = document.createElement("div");
+divRow1Column13.classList.add("elementRow1");
+
+const divRow1Column14 = document.createElement("div");
+divRow1Column14.classList.add("elementRow1");
+
+const divRow1Column15 = document.createElement("div");
+divRow1Column15.classList.add("elementRow1");
+
+const divRow1Column16 = document.createElement("div");
+divRow1Column16.classList.add("elementRow1");
+
+//divRow1Elements = document.querySelectorAll(".elementRow1");
+//divRow1Elements.forEach(child => {
+//    divRow1.appendChild(child);
+//})
+
+//const rows = document.querySelectorAll(".row");
+//rows.forEach(child => {
+//    container.appendChild(child)});
+
+//container.appendChild(divRow1Column2);
 
 
 
