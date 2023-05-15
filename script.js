@@ -8,12 +8,15 @@ body.appendChild(gridContainer);
 function createGrid(rows, columns) {
   //gridContainer=document.getElementById("grid-container");
   gridContainer.innerHTML = ''; // Clear previous grid
-  
+  gridContainer.style.display = 'grid';
+  gridContainer.style.width = '960px';
+  gridContainer.style.height = '960px';
+  gridContainer.style.boxSizing = "border-box";
   gridContainer.style.gridTemplateColumns = `repeat(${columns}, 1fr)`; // Set the number of columns
   gridContainer.style.gridTemplateRows = `repeat(${rows}, 1fr)`; // Set the number of rows
 
   for (let i = 0; i < rows; i++) {
-    const rowDiv = document.createElement('div');
+    const rowDiv = document.createElement('div');   
     rowDiv.classList.add('grid-row');
 
     for (let j = 0; j < columns; j++) {
@@ -24,6 +27,9 @@ function createGrid(rows, columns) {
 
     gridContainer.appendChild(rowDiv);
   }
+  
+  
+  
   //body.appendChild(gridContainer);
 }
 

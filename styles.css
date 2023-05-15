@@ -1,9 +1,10 @@
-#grid-container {
+/*#grid-container {
     display: grid;
 }
 
 .grid-row {
     display: flex;
+    flex-grow: 1;
     width: 20px;
     height: 20px;
 }
