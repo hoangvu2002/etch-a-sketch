@@ -4,8 +4,6 @@ const body = document.querySelector("body");
 body.appendChild(gridContainer);
 
 
-const body = document.querySelector("body");
-
 
 function createGrid(rows, columns) {
   //gridContainer=document.getElementById("grid-container");
