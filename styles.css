@@ -1,12 +1,9 @@
-.rowElement {
-    padding: 20px;
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    background-color: blue;
+#grid-container {
+    display: grid;
+    width: 960px;
+    height: 960px;
 }
 
-.row {
+.grid-row {
     display: flex;
 }
