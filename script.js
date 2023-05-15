@@ -18,7 +18,7 @@ function getRandomColor() {
 
 function createGrid(rows, columns) {
   //gridContainer=document.getElementById("grid-container");
-  //gridContainer.innerHTML = ''; // Clear previous grid
+  gridContainer.innerHTML = ''; // Clear previous grid
   gridContainer.style.display = 'grid';
   gridContainer.style.width = '960px';
   gridContainer.style.height = '960px';
@@ -54,7 +54,7 @@ const buttons = document.createElement("div");
 buttons.classList.add("buttons");
 const resetButton = document.createElement('button');
 resetButton.textContent = 'Reset Colors';
-
+resetButton.classList.add('reset')
 resetButton.addEventListener('click', function() {
   const cellDivs = document.querySelectorAll('.grid-row');
   cellDivs.forEach(function(cellDiv) {
@@ -62,14 +62,32 @@ resetButton.addEventListener('click', function() {
   });
 });
 
+const resetGrid = document.createElement("button")
+resetGrid.textContent = "Reset grid";
+resetGrid.classList.add("reset");
+resetGrid.addEventListener("click", function() {
+  const square = +prompt('Enter a number lower than 100', "");
+  if (square && square <= 100) {
+    createGrid(square, square)
+  }
+})
+buttons.appendChild(resetGrid);
 buttons.appendChild(resetButton);
-buttons.style.cssText = 'display: flex; justify-content: center; align-items: center';
+buttons.style.cssText = `display: flex; justify-content: center; align-items: center;
+                          gap: 10px`
 body.appendChild(buttons);
 
 body.style.cssText = `display: flex; flex-direction: column; 
                       justify-content: center; align-items: center; 
                       padding: 20px; background-color: #fefbd8;
-                      border: 10px solid black; gap: 10px`
+                      border: 10px solid black; gap: 20px`
+
+const navs = document.querySelectorAll('.reset');
+navs.forEach(child => {
+  child.style.cssText = `padding: 10px; border: 1px solid black; 
+                        font-family: "Lucida Console", "Courier New", monospace;
+                        font-size: 10px; color: black; background-color: yellow;`
+})
 
 
 
