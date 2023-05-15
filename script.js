@@ -1,6 +1,11 @@
 const gridContainer = document.createElement('div');
 gridContainer?.setAttribute("id","grid-container");
 const body = document.querySelector("body");
+const introText = document.createElement("div");
+introText.textContent = "Etch a Sketch"
+introText.style.cssText = 'padding: 10px; text-align: center;   font-family: "Lucida Console", "Courier New", monospace; font-size: 40px'
+
+body.appendChild(introText);
 body.appendChild(gridContainer);
 
 function getRandomColor() {
@@ -9,6 +14,7 @@ function getRandomColor() {
   const blue = Math.floor(Math.random() * 256);
   return `rgb(${red}, ${green}, ${blue})`;
 }
+
 
 function createGrid(rows, columns) {
   //gridContainer=document.getElementById("grid-container");
@@ -24,9 +30,8 @@ function createGrid(rows, columns) {
     const rowDiv = document.createElement('div');   
     rowDiv.classList.add('grid-row');
     rowDiv.style.display = "flex";
-    rowDiv.addEventListener('mouseenter', function () {
-      rowDiv.style.backgroundColor = 'red';
-    });
+    rowDiv.addEventListener('mouseenter', () => 
+                              rowDiv.style.backgroundColor = getRandomColor(), {once: true} );
 
 //    for (let j = 0; j < columns; j++) {
 //      const cellDiv = document.createElement('div');
@@ -43,9 +48,28 @@ function createGrid(rows, columns) {
   //body.appendChild(gridContainer);
 }
 
-createGrid(16, 16); // Create a 16x16 grid
+createGrid(64, 64); // Create a 16x16 grid
 
+const buttons = document.createElement("div");
+buttons.classList.add("buttons");
+const resetButton = document.createElement('button');
+resetButton.textContent = 'Reset Colors';
 
+resetButton.addEventListener('click', function() {
+  const cellDivs = document.querySelectorAll('.grid-row');
+  cellDivs.forEach(function(cellDiv) {
+    cellDiv.style.backgroundColor = '';
+  });
+});
+
+buttons.appendChild(resetButton);
+buttons.style.cssText = 'display: flex; justify-content: center; align-items: center';
+body.appendChild(buttons);
+
+body.style.cssText = `display: flex; flex-direction: column; 
+                      justify-content: center; align-items: center; 
+                      padding: 20px; background-color: #fefbd8;
+                      border: 10px solid black; gap: 10px`
 
 
 
