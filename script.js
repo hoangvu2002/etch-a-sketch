@@ -30,6 +30,7 @@ function createGrid(rows, columns) {
     const rowDiv = document.createElement('div');   
     rowDiv.classList.add('grid-row');
     rowDiv.style.display = "flex";
+    rowDiv.style.backgroundColor = 'gray';
     rowDiv.addEventListener('mouseenter', () => 
                               rowDiv.style.backgroundColor = getRandomColor(), {once: true} );
 
@@ -58,7 +59,7 @@ resetButton.classList.add('reset')
 resetButton.addEventListener('click', function() {
   const cellDivs = document.querySelectorAll('.grid-row');
   cellDivs.forEach(function(cellDiv) {
-    cellDiv.style.backgroundColor = '';
+    cellDiv.style.backgroundColor = 'gray';
   });
 });
 
