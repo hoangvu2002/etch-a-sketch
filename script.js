@@ -1,13 +1,14 @@
 const gridContainer = document.createElement('div');
-gridContainer?setAttribute("id","grid-container");
+gridContainer?.setAttribute("id","grid-container");
 const body = document.querySelector("body");
 body.appendChild(gridContainer);
 
 
 const body = document.querySelector("body");
-body.appendChild(gridContainer);
+
 
 function createGrid(rows, columns) {
+  //gridContainer=document.getElementById("grid-container");
   gridContainer.innerHTML = ''; // Clear previous grid
   
   gridContainer.style.gridTemplateColumns = `repeat(${columns}, 1fr)`; // Set the number of columns
@@ -25,6 +26,7 @@ function createGrid(rows, columns) {
 
     gridContainer.appendChild(rowDiv);
   }
+  //body.appendChild(gridContainer);
 }
 
 createGrid(16, 16); // Create a 16x16 grid
