@@ -3,7 +3,12 @@ gridContainer?.setAttribute("id","grid-container");
 const body = document.querySelector("body");
 body.appendChild(gridContainer);
 
-
+function getRandomColor() {
+  const red = Math.floor(Math.random() * 256); // Random value between 0 and 255
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+  return `rgb(${red}, ${green}, ${blue})`;
+}
 
 function createGrid(rows, columns) {
   //gridContainer=document.getElementById("grid-container");
@@ -19,6 +24,9 @@ function createGrid(rows, columns) {
     const rowDiv = document.createElement('div');   
     rowDiv.classList.add('grid-row');
     rowDiv.style.display = "flex";
+    rowDiv.addEventListener('mouseenter', function () {
+      rowDiv.style.backgroundColor = 'red';
+    });
 
 //    for (let j = 0; j < columns; j++) {
 //      const cellDiv = document.createElement('div');
